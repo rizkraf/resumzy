@@ -6,7 +6,7 @@ const currentYear = new Date().getFullYear();
   <footer class="border-t border-t-default">
     <UContainer
       as="footer"
-      class="flex h-16 items-center justify-between border-t border-t-default"
+      class="flex h-16 items-center justify-between"
     >
       <div class="text-sm text-muted-foreground">
         &copy; {{ currentYear }} Resumzy. All rights reserved.
