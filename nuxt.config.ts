@@ -9,9 +9,6 @@ export default defineNuxtConfig({
   ui: {
     colorMode: false,
   },
-  alias: {
-    html2canvas: path.resolve(__dirname, 'node_modules/html2canvas-pro'),
-  },
   app: {
     head: {
       title: 'Resumzy - Create your resume in minutes',
