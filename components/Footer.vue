@@ -13,7 +13,7 @@ const currentYear = new Date().getFullYear();
       </div>
       <div>
         <UButton
-          to="https://github.com/nuxt/ui"
+          to="https://github.com/rizkraf/resumzy"
           target="_blank"
           icon="i-lucide-github"
           variant="link"
