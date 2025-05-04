@@ -1,4 +1,13 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Resumzy - Create your resume in minutes',
+  ogTitle: 'Resumzy - Create your resume in minutes',
+  description:
+    'Create your resume in minutes with our free resume builder. ATS-friendly and easy to use.',
+  ogDescription:
+    'Create your resume in minutes with our free resume builder. ATS-friendly and easy to use.',
+});
+
 definePageMeta({
   layout: 'landing',
 });
@@ -11,12 +20,13 @@ definePageMeta({
       class="flex flex-col justify-center space-y-8 py-24 md:py-32"
     >
       <div class="space-y-4 max-w-xl">
-        <h1 class="text-5xl font-bold">Build a professional resume for free</h1>
+        <h1 class="text-5xl font-bold">
+          Create your resume in minutes, completely free
+        </h1>
         <p class="text-lg text-muted-foreground">
-          Create a clean, ATS friendly, and professional resume in minutes. Our
-          free builder offers straightforward templates, simple customization,
-          and helpful tips to showcase your skills and experience without the
-          complexity.
+          Build an ATS-friendly professional resume without the hassle. Our
+          simple, no-cost builder offers clean templates and straightforward
+          customization.
         </p>
       </div>
       <div class="space-x-4">
@@ -29,6 +39,23 @@ definePageMeta({
         >
           Build Your Resume
         </UButton>
+      </div>
+      <div
+        className="relative hidden md:block -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20"
+      >
+        <div
+          aria-hidden
+          className="bg-linear-to-b to-white absolute inset-0 z-10 from-transparent from-35%"
+        />
+        <div
+          className="inset-shadow-2xs ring-white bg-white relative mx-auto w-full overflow-hidden rounded-2xl border border-default p-4 shadow-lg shadow-zinc-950/15 ring-1"
+        >
+          <NuxtImg
+            className="z-2 relative rounded-2xl w-full"
+            src="/resume-builder.png"
+            alt="app screen"
+          />
+        </div>
       </div>
     </UContainer>
   </main>

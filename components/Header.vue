@@ -5,6 +5,17 @@
         <UIcon name="i-lucide-file-text" class="size-8 text-neutral" />
         <span class="text-xl font-bold">Resumzy</span>
       </div>
+      <div class="flex items-center space-x-4">
+        <UButton
+          to="/resume/create"
+          variant="solid"
+          color="neutral"
+
+          class="rounded-full"
+        >
+          Create Resume
+        </UButton>
+      </div>
     </UContainer>
   </header>
 </template>
