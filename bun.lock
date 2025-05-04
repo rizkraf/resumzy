@@ -6,7 +6,6 @@
       "dependencies": {
         "@nuxt/image": "^1.10.0",
         "@nuxt/ui": "^3.1.1",
-        "html2canvas-pro": "^1.5.10",
         "jspdf": "^3.0.1",
         "nuxt": "^3.17.1",
         "vue": "^3.5.13",
@@ -982,8 +981,6 @@
     "hosted-git-info": ["hosted-git-info@7.0.2", "", { "dependencies": { "lru-cache": "^10.0.1" } }, "sha512-puUZAUKT5m8Zzvs72XWy3HtvVbTWljRE66cP60bxJzAqf2DgICo7lYTY2IHUmLnNpjYvw5bvmoHvPc0QO2a62w=="],
 
     "html2canvas": ["html2canvas@1.4.1", "", { "dependencies": { "css-line-break": "^2.1.0", "text-segmentation": "^1.0.3" } }, "sha512-fPU6BHNpsyIhr8yyMpTLLxAbkaK8ArIBcmZIRiBLiDhjeqvXolaEmDGmELFuX9I4xDcaKKcJl+TKZLqruBbmWA=="],
-
-    "html2canvas-pro": ["html2canvas-pro@1.5.10", "", { "dependencies": { "css-line-break": "^2.1.0", "text-segmentation": "^1.0.3" } }, "sha512-CoYkD4+wrdX5j5HfkPu6CxFXWXQbGld3cxcQYiU4JVHfZSe3JeMEgAwBCYd6ROsn2nVETHyMUjXLQLcmCGjRqQ=="],
 
     "http-errors": ["http-errors@2.0.0", "", { "dependencies": { "depd": "2.0.0", "inherits": "2.0.4", "setprototypeof": "1.2.0", "statuses": "2.0.1", "toidentifier": "1.0.1" } }, "sha512-FtwrG/euBzaEjYeRqOgly7G0qviiXoJWnvEH2Z1plBdXgbyjv34pHTSb9zoeHMyDy33+DWy5Wt9Wo+TURtOYSQ=="],
 

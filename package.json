@@ -12,7 +12,6 @@
   "dependencies": {
     "@nuxt/image": "^1.10.0",
     "@nuxt/ui": "^3.1.1",
-    "html2canvas-pro": "^1.5.10",
     "jspdf": "^3.0.1",
     "nuxt": "^3.17.1",
     "vue": "^3.5.13",
