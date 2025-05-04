@@ -40,14 +40,29 @@ const removeExperience = (index: number) => {
       </template>
       <div class="flex flex-col gap-4">
         <UFormField label="Company" name="company">
-          <UInput v-model="experience.company" class="w-full" />
+          <UInput
+            v-model="experience.company"
+            class="w-full"
+            color="neutral"
+            placeholder="e.g. Acme Corporation"
+          />
         </UFormField>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <UFormField label="Position" name="position">
-            <UInput v-model="experience.position" class="w-full" />
+            <UInput
+              v-model="experience.position"
+              class="w-full"
+              color="neutral"
+              placeholder="e.g. Software Engineer"
+            />
           </UFormField>
           <UFormField label="Location" name="location">
-            <UInput v-model="experience.location" class="w-full" />
+            <UInput
+              v-model="experience.location"
+              class="w-full"
+              color="neutral"
+              placeholder="e.g. San Francisco, CA"
+            />
           </UFormField>
         </div>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -56,6 +71,8 @@ const removeExperience = (index: number) => {
               v-model="experience.startDateMonth"
               :items="months"
               class="w-full"
+              color="neutral"
+              placeholder="Select month"
             />
           </UFormField>
           <UFormField label="Start Date (Year)" name="startDateYear">
@@ -63,6 +80,8 @@ const removeExperience = (index: number) => {
               v-model="experience.startDateYear"
               :items="years"
               class="w-full"
+              color="neutral"
+              placeholder="Select year"
             />
           </UFormField>
         </div>
@@ -73,6 +92,8 @@ const removeExperience = (index: number) => {
               :items="months"
               class="w-full"
               :disabled="experience.currentlyWorking"
+              color="neutral"
+              placeholder="Select month"
             />
           </UFormField>
           <UFormField label="End Date (Year)" name="endDateYear">
@@ -81,6 +102,8 @@ const removeExperience = (index: number) => {
               :items="years"
               class="w-full"
               :disabled="experience.currentlyWorking"
+              color="neutral"
+              placeholder="Select year"
             />
           </UFormField>
         </div>
@@ -88,10 +111,16 @@ const removeExperience = (index: number) => {
           <UCheckbox
             label="Currently Working"
             v-model="experience.currentlyWorking"
+            color="neutral"
           />
         </UFormField>
         <UFormField label="Description" name="description">
-          <UTextarea v-model="experience.description" class="w-full" />
+          <UTextarea
+            v-model="experience.description"
+            class="w-full"
+            color="neutral"
+            placeholder="e.g. Developed and maintained web applications using Vue.js and TypeScript. Led a team of 3 developers for the customer portal project."
+          />
         </UFormField>
       </div>
     </UCard>

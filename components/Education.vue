@@ -40,14 +40,29 @@ const removeEducation = (index: number) => {
       </template>
       <div class="flex flex-col gap-4">
         <UFormField label="Institution" name="institution">
-          <UInput v-model="education.institution" class="w-full" />
+          <UInput
+            v-model="education.institution"
+            class="w-full"
+            color="neutral"
+            placeholder="e.g. Stanford University"
+          />
         </UFormField>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
           <UFormField label="Degree" name="degree">
-            <UInput v-model="education.degree" class="w-full" />
+            <UInput
+              v-model="education.degree"
+              class="w-full"
+              color="neutral"
+              placeholder="e.g. Bachelor of Science"
+            />
           </UFormField>
           <UFormField label="Field Of Study" name="fieldOfStudy">
-            <UInput v-model="education.fieldOfStudy" class="w-full" />
+            <UInput
+              v-model="education.fieldOfStudy"
+              class="w-full"
+              color="neutral"
+              placeholder="e.g. Computer Science"
+            />
           </UFormField>
         </div>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -56,6 +71,8 @@ const removeEducation = (index: number) => {
               v-model="education.startDateMonth"
               :items="months"
               class="w-full"
+              color="neutral"
+              placeholder="Select month"
             />
           </UFormField>
           <UFormField label="Start Date (Year)" name="startDateYear">
@@ -63,6 +80,8 @@ const removeEducation = (index: number) => {
               v-model="education.startDateYear"
               :items="years"
               class="w-full"
+              color="neutral"
+              placeholder="Select year"
             />
           </UFormField>
         </div>
@@ -73,6 +92,8 @@ const removeEducation = (index: number) => {
               :items="months"
               class="w-full"
               :disabled="education.currentlyStudying"
+              color="neutral"
+              placeholder="Select month"
             />
           </UFormField>
           <UFormField label="End Date (Year)" name="endDateYear">
@@ -81,6 +102,8 @@ const removeEducation = (index: number) => {
               :items="years"
               class="w-full"
               :disabled="education.currentlyStudying"
+              color="neutral"
+              placeholder="Select year"
             />
           </UFormField>
         </div>
@@ -88,10 +111,16 @@ const removeEducation = (index: number) => {
           <UCheckbox
             label="Currently Studying"
             v-model="education.currentlyStudying"
+            color="neutral"
           />
         </UFormField>
         <UFormField label="Description" name="description">
-          <UTextarea v-model="education.description" class="w-full" />
+          <UTextarea
+            v-model="education.description"
+            class="w-full"
+            color="neutral"
+            placeholder="e.g. Relevant coursework, achievements, and projects"
+          />
         </UFormField>
       </div>
     </UCard>

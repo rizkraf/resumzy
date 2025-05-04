@@ -41,19 +41,21 @@ definePageMeta({
         </UButton>
       </div>
       <div
-        className="relative hidden md:block -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20"
+        class="relative hidden md:block mt-8 overflow-hidden px-2 md:mt-12 lg:mt-16"
       >
         <div
-          aria-hidden
-          className="bg-linear-to-b to-white absolute inset-0 z-10 from-transparent from-35%"
+          aria-hidden="true"
+          class="absolute inset-0 z-10 bg-gradient-to-b from-transparent from-35% to-white"
         />
         <div
-          className="inset-shadow-2xs ring-white bg-white relative mx-auto w-full overflow-hidden rounded-2xl border border-default p-4 shadow-lg shadow-zinc-950/15 ring-1"
+          class="relative mx-auto w-full overflow-hidden rounded-2xl border border-gray-200 bg-white p-4 shadow-lg shadow-zinc-950/15 ring-1 ring-white"
         >
           <NuxtImg
-            className="z-2 relative rounded-2xl w-full"
+            class="relative z-2 w-full rounded-2xl"
             src="/resume-builder.png"
-            alt="app screen"
+            alt="Resume builder preview"
+            format="webp"
+            loading="eager"
           />
         </div>
       </div>

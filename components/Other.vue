@@ -42,8 +42,13 @@ const removeCategory = (other: any, index: number) => {
     <UCard v-for="(other, index) in resumeState.other" :key="index">
       <template #header>
         <div class="flex items-center justify-between">
-          <UFormField name="sectionName">
-            <UInput v-model="other.sectionName" class="w-full" />
+          <UFormField name="sectionName" class='flex-1'>
+            <UInput
+              v-model="other.sectionName"
+              class="w-full"
+              color="neutral"
+              placeholder="e.g., Skills, Publications, Certificates, Languages, Projects"
+            />
           </UFormField>
           <UButton
             v-if="resumeState.other.length > 1"
@@ -62,7 +67,12 @@ const removeCategory = (other: any, index: number) => {
         >
           <UFormField :label="'Category ' + (index + 1)" name="category">
             <div class="flex items-center gap-2">
-              <UInput v-model="item.category" class="w-full" />
+              <UInput
+                v-model="item.category"
+                class="w-full"
+                color="neutral"
+                placeholder="e.g., Paper Title, Certificate Name, Language Name"
+              />
               <UButton
                 v-if="other.items.length > 1"
                 icon="i-lucide-x"
@@ -73,7 +83,12 @@ const removeCategory = (other: any, index: number) => {
             </div>
           </UFormField>
           <UFormField :label="'Contents ' + (index + 1)" name="contents">
-            <UTextarea v-model="item.contents" class="w-full" />
+            <UTextarea
+              v-model="item.contents"
+              class="w-full"
+              color="neutral"
+              placeholder="e.g., 'Published in Journal XYZ, 2023' or 'Fluent - Reading, Writing, Speaking'"
+            />
           </UFormField>
         </div>
         <div>
@@ -93,8 +108,7 @@ const removeCategory = (other: any, index: number) => {
         variant="solid"
         color="neutral"
         @click="addOther"
-        >Add Other</UButton
-      >
+        >Add Other</UButton>
     </div>
   </UForm>
 </template>
